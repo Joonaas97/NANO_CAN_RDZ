@@ -70,119 +70,70 @@ setupTimer2();
 ISR(TIMER1_COMPA_vect) {
         if(OCR1A<65000){
          
-        PORTC= B00001111 ; 
-
-        //digitalWrite(3, HIGH); //1
-        //digitalWrite(5, HIGH);
-        //digitalWrite(7, HIGH);
-        //digitalWrite(9, HIGH);
+        //PORTC= B00001111 ; 
+        PORTD= B00111100 ;
+ 
         delayMicroseconds(52);
-         PORTC =B00000000;        
+         //PORTC =B00000000; 
+         PORTD =B00000000;       
         delayMicroseconds(26);
 
-        PORTD= B00111100 ;         
-        //digitalWrite(3, LOW); //2
-        //digitalWrite(5, LOW);
-        //digitalWrite(7, LOW);
-        //digitalWrite(9, LOW);
-//        
-//        digitalWrite(2, HIGH); //3
-//        digitalWrite(4, HIGH);
-//        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-//        PORTD= B10101010 ;
+        //PORTD= B00111100 ;
+        PORTC= B00001111 ;         
+ 
 
         delayMicroseconds(26);
-//        
-//        digitalWrite(2, LOW); //4
-////        digitalWrite(4, LOW);
-////        digitalWrite(6, LOW);
-////        digitalWrite(8, LOW);
-         PORTD =B00000000;
+
+         //PORTD =B00000000;
+         PORTC =B00000000;
          delayMicroseconds(26);
-////
-////        digitalWrite(2, HIGH); //5
-////        digitalWrite(4, HIGH);
-////        digitalWrite(6, HIGH);
-////        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(26);
-////
-////        digitalWrite(2, LOW); //6
-////        digitalWrite(4, LOW);
-////        digitalWrite(6, LOW);
-////        digitalWrite(8, LOW);
-PORTD =B00000000;
-        delayMicroseconds(26);
-////
-////        digitalWrite(2, HIGH); //7
-////        digitalWrite(4, HIGH);
-////        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(26);
-//
-//        digitalWrite(2, LOW); //8
-//        digitalWrite(4, LOW);
-//        digitalWrite(6, LOW);
-//        digitalWrite(8, LOW);
-PORTD =B00000000;
-         delayMicroseconds(52);
-//
-//        digitalWrite(2, HIGH); //9
-//        digitalWrite(4, HIGH);
-//        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(51);
-//
-//        digitalWrite(2, LOW); //10
-//        digitalWrite(4, LOW);
-//        digitalWrite(6, LOW);
-//        digitalWrite(8, LOW);
-PORTD =B00000000;
-         delayMicroseconds(51);
-//
-//        digitalWrite(2, HIGH); //11
-//        digitalWrite(4, HIGH);
-//        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(51);
-//
-//        digitalWrite(2, LOW); //12
-//        digitalWrite(4, LOW);
-//        digitalWrite(6, LOW);
-//        digitalWrite(8, LOW);
-PORTD =B00000000;
-         delayMicroseconds(51);
-//
-//        digitalWrite(2, HIGH); //13
-//        digitalWrite(4, HIGH);
-//        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(26);
-//
-//        digitalWrite(2, LOW); //14
-//        digitalWrite(4, LOW);
-//        digitalWrite(6, LOW);
-//        digitalWrite(8, LOW);
-PORTD =B00000000;
-         delayMicroseconds(26);
-//
-//        digitalWrite(2, HIGH); //15
-//        digitalWrite(4, HIGH);
-//        digitalWrite(6, HIGH);
-//        digitalWrite(8, HIGH);
-PORTD= B00111100;
-        delayMicroseconds(26);
-//        
-//        digitalWrite(2, LOW); //16
-//        digitalWrite(4, LOW);
-//        digitalWrite(6, LOW);
-//        digitalWrite(8, LOW);
-PORTD =B00000000;
+
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(26);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
+                delayMicroseconds(26);
+        
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(26);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
+                 delayMicroseconds(52);
+        
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(51);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
+                 delayMicroseconds(51);
+        
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(51);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
+                 delayMicroseconds(51);
+        
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(26);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
+                 delayMicroseconds(26);
+        
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
+                delayMicroseconds(26);
+        
+        //PORTD =B00000000;
+        PORTC =B00000000;
 
 }
 
@@ -224,48 +175,61 @@ void setupTimer2() {
 
 ISR(TIMER2_COMPA_vect) {
   if(divider==0){
-        PORTD= B00111100 ;         
+        //PORTD= B00111100 ; 
+        PORTC= B00001111 ;        
         delayMicroseconds(51);
 
-         PORTD =B00000000;
+         PORTC =B00000000;
          delayMicroseconds(26);
 
-        PORTD= B00111100;
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
         delayMicroseconds(26);
 
-        PORTD =B00000000;
+        PORTC =B00000000;
+        
         delayMicroseconds(51);
 
-        PORTD= B00111100;
+        //PORTD= B00111100;
+        PORTC= B00001111 ;
         delayMicroseconds(51);
   
-          PORTD =B00000000;       
+          PORTC =B00000000;       
          delayMicroseconds(26);
   
-        PORTD= B00111100;       //1
+        //PORTD= B00111100;       //1
+        PORTC= B00001111 ;
         delayMicroseconds(26);
         
-        PORTD =B00000000;       
+        PORTC =B00000000;       
          delayMicroseconds(26);
   
-        PORTD= B00111100;      // 2
+        //PORTD= B00111100;      // 2
+        PORTC= B00001111 ;
         delayMicroseconds(26);
-        PORTD =B00000000;
+        PORTC =B00000000;
          delayMicroseconds(26);
       
-        PORTD= B00111100;       //3
+        //PORTD= B00111100;       //3
+        PORTC= B00001111 ;
         delayMicroseconds(26);
-        PORTD =B00000000;
+        PORTC =B00000000;
          delayMicroseconds(26);
   
-        PORTD= B00111100;       //4
+        //PORTD= B00111100;       //4
+        PORTC= B00001111 ;
         delayMicroseconds(26);
-        PORTD =B00000000;
+        PORTC =B00000000;
          delayMicroseconds(26);
   
-        PORTD= B00111100;       //5
+        //PORTD= B00111100;       //5
+        PORTC= B00001111 ;
         delayMicroseconds(26);
-        PORTD =B00000000;
+        PORTC= B00000000 ;
+        delayMicroseconds(51);
+        PORTC= B00001111 ;
+        delayMicroseconds(26);
+        PORTC =B00000000;
 
           
 
@@ -285,7 +249,7 @@ void loop()
         CAN0.readMsgBuf(&rxId, &len, rxBuf);      // Read data: len = data length, buf = data byte(s)
         if((rxId) == 0xCE) 
           {
-            //FL =(rxBuf[0])|(rxBuf[1]<<8);
+            //FL =(rxBuf[0])|(rxBuf[1]<<8); 0/1=FL ; 2/3=FR ;4/5=RL ;6/7=RR
             FL =(rxBuf[2])|(rxBuf[3]<<8);
             //Serial.print(FL);
             //FL=2567000/FL;
